@@ -5,13 +5,13 @@ using std::string;
 
 void SList::insertFront(int val) {
   SListNode* tmp = head;
-  SListNode n1 = SListNode(val);
+  SListNode n1 = new SListNode(val);
   head = n1;
   return;
 }
 
 void SList::insertEnd(int val) {
-  SListNode n = SListNode(val);
+  SListNode n = new SListNode(val);
   SListNode cur = head;
   while (cur.next != NULL) {
     cur = cur.next;
